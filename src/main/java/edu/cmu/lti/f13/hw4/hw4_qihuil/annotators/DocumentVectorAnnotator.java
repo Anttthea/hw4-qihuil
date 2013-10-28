@@ -67,8 +67,6 @@ public class DocumentVectorAnnotator extends JCasAnnotator_ImplBase {
 	     }
 	     l = Utils.fromCollectionToFSList(jcas, vec);
 	     doc.setTokenList(l);
-	   //Adding populated FeatureStructure to CAS
-		//	jcas.addFsToIndexes(doc);
 	}
 
 }
