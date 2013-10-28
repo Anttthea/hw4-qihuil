@@ -114,6 +114,6 @@
 	</build>
 	<scm>
 		<connection>scm:git:git://github.com/Anttthea/hw4-qihuil.git</connection>
-		<developerConnection>scm:git:git://github.com/Anttthea/hw2-qihuil.git</developerConnection>
+		<developerConnection>scm:git:git://github.com/Anttthea/hw4-qihuil.git</developerConnection>
 	</scm>
 </project>
