@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <name>VectorSpaceTypes</name>
   <description/>
@@ -29,7 +30,7 @@
           <name>tokenList</name>
           <description/>
           <rangeTypeName>uima.cas.FSList</rangeTypeName>
-          <elementType>edu.cmu.vector_space.typesystems.Token</elementType>
+          <elementType>edu.cmu.lti.f13.hw4.hw4_qihuil.typesystems.Token</elementType>
         </featureDescription>
       </features>
     </typeDescription>

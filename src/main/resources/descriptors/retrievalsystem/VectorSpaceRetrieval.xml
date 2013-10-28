@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>false</primitive>
   <delegateAnalysisEngineSpecifiers>
-    <delegateAnalysisEngine key="DocumentVectorAnnotator">
-      <import location="DocumentVectorAnnotator.xml"/>
-    </delegateAnalysisEngine>
     <delegateAnalysisEngine key="DocumentReader">
       <import location="DocumentReader.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="DocumentVectorAnnotator">
+      <import location="DocumentVectorAnnotator.xml"/>
     </delegateAnalysisEngine>
     <delegateAnalysisEngine key="RetrievalEvaluator">
       <import location="RetrievalEvaluator.xml"/>
@@ -18,7 +19,7 @@
     <description/>
     <version/>
     <vendor/>
-    <configurationParameters/>
+    <configurationParameters searchStrategy="language_fallback"/>
     <configurationParameterSettings/>
     <flowConstraints>
       <fixedFlow>
@@ -27,11 +28,14 @@
         <node>RetrievalEvaluator</node>
       </fixedFlow>
     </flowConstraints>
+    <typePriorities/>
     <fsIndexCollection/>
     <capabilities>
       <capability>
         <inputs/>
-        <outputs/>
+        <outputs>
+          <type allAnnotatorFeatures="true">edu.cmu.lti.f13.hw4.hw4_qihuil.typesystems.Document</type>
+        </outputs>
         <languagesSupported/>
       </capability>
     </capabilities>
